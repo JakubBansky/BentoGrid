@@ -31,14 +31,23 @@
     }
 
     div {
+
+      --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+      filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+
+      border-radius: 0.5rem
+        /* 8px */
+      ;
+
+
       font-family: "DM Sans";
     }
   </style>
 </head>
-
+<!-- 12 -->
 <body>
-  <div class="grid grid-cols-4 grid-flow-row gap-6 ">
-    <div class="row-span-2 bg-yellow-100 flex flex-col rounded-lg">
+  <div class="grid grid-cols-4 grid-flow-row gap-6  max-lg:flex max-lg:flex-col">
+    <div class="row-span-5 bg-yellow-100 flex flex-col drop-shadow-md pb-10">
       <h1 class="text-black text-4xl font-medium m-12 ">
         Create and schedule content <em class="text-purple-500"> quicker. </em>
       </h1>
@@ -46,7 +55,7 @@
     </div>
 
 
-    <div class="py-8 text-white flex flex-col items-center justify-center col-span-2 bg-purple-500 rounded-lg">
+    <div class="row-span-4 py-8 text-white flex flex-col items-center justify-center col-span-2 bg-purple-500 rounded-lg">
       <h1 class=" font-medium text-6xl m-8 text-center">
         Social Media <strong class="text-yellow-500"> 10x </strong> Faster with AI
       </h1>
@@ -54,38 +63,42 @@
       <h1>Over 4,000 5-star reviews</h1>
     </div>
 
-    <div class="flex items-center justify-center flex-col row-span-2 bg-purple-100 rounded-lg z-10 overflow-hidden ">
-      <h1 class=" font-semibold text-3xl m-5">Schedule to social media.</h1>
-      <img class="m-3 ml-12 w-lvw  " src="/BentoGrid/bento-grid-main/assets/images/illustration-schedule-posts.webp" alt="">
-      <h1 class=" m-8 font-medium text-xl">Optimize post timings to publish content at the perfect time
+    <div class="row-span-8 flex items-center justify-between flex-col bg-purple-100 relative overflow-hidden ">
+      <h1 class=" font-semibold text-3xl m-8">Schedule to social media.</h1>
+      <img class="m-3 absolute top-1/4 left-10 " src="/BentoGrid/bento-grid-main/assets/images/illustration-schedule-posts.webp"
+        alt="">
+      <h1 class=" m-6 mb-14 font-medium text-xl">Optimize post timings to publish content at the perfect time
         for your audience.</h1>
     </div>
-    <div>
-      <img src="/BentoGrid/bento-grid-main/assets/images/illustration-multiple-platforms.webp" alt="">
-      <h1>Manage multiple accounts and platforms.</h1>
+
+    <div class="row-span-4 rounded-lg bg-gray-50 overflow-hidden">
+      <img class="ml-10" src="/BentoGrid/bento-grid-main/assets/images/illustration-multiple-platforms.webp" alt="">
+      <h1 class="text-5xl m-3 font-medium">Manage multiple accounts and platforms.</h1>
     </div>
 
 
-    <div>
-      <h1>Maintain a consistent posting schedule. </h1>
-      <img src="/BentoGrid/bento-grid-main/assets/images/illustration-consistent-schedule.webp" alt="">
+    <div class="row-span-4 bg-yellow-500 overflow-hidden relative py-10">
+      <h1 class="font-medium text-4xl mx-7">Maintain a consistent posting schedule. </h1>
+      <img class="absolute top-56 left-6 w-10/12"
+        src="/BentoGrid/bento-grid-main/assets/images/illustration-consistent-schedule.webp" alt="">
     </div>
 
-    <div class="row-span-2 bg-yellow-500">
-      <h1>
+    <div class="row-span-7 bg-yellow-500 pb-10 flex flex-col items-center">
+      <h1 class="text-5xl m-5">
         Write your content using AI.
       </h1>
-      <img src="/BentoGrid/bento-grid-main/assets/images/illustration-ai-content.webp" alt="">
+      <img class="w-10/12 ml-4 mt-5" src="/BentoGrid/bento-grid-main/assets/images/illustration-ai-content.webp" alt="">
     </div>
 
-    <div>
-      <h1>>56% faster audience growth</h1>
-      <img src="/BentoGrid/bento-grid-main/assets/images/illustration-audience-growth.webp" alt="">
+    <div class="row-span-4 bg-white flex flex-col items-center">
+      <h1 class="mr-auto text-6xl m-5 ">>56% </h1>
+      <h1 class="font-medium text-xl mb-8"> faster audience growth</h1>
+      <img class="w-8/12" src="/BentoGrid/bento-grid-main/assets/images/illustration-audience-growth.webp" alt="">
     </div>
 
-    <div class="col-span-2 bg-purple-500">
-      <img src="/BentoGrid/bento-grid-main/assets/images/illustration-grow-followers.webp" alt="">
-      <h1>Grow followers with non-stop content.</h1>
+    <div class="row-span-4 col-span-2 bg-purple-500 flex justify-center items-center">
+      <img class=" ml-5 w-5/12" src="/BentoGrid/bento-grid-main/assets/images/illustration-grow-followers.webp" alt="">
+      <h1 class="ml-3 py-20 text-white font-medium text-5xl">Grow followers with non-stop content.</h1>
     </div>
 
 
